@@ -2,14 +2,14 @@ FROM python:3.5
 
 ENV PYTHONUNBUFFERED 1
 
+RUN pip install virtualenv
+RUN virtualenv app
+CMD source app/bin/activate
 
-RUN mkdir /virtualenv
-COPY virtualenv/ /app/
+COPY virtualenv/centralize /app/centralize
+WORKDIR /app/centralize
+ADD . /app/centralize
 
-ENV APPLICATION_ROOT /app
-ENV PYTHONPATH $APPLICATION_ROOT/lib/$PYTHON_PATH
-
-CMD source $APPLICATION_ROOT/bin/activate
-WORKDIR $APPLICATION_ROOT/centralize/
-ADD . $APPLICATION_ROOT/centralize/
+RUN pip install -r requirements.txt
+RUN	python manage.py migrate
 CMD	python manage.py runserver 0.0.0.0:8000
