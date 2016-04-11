@@ -1,0 +1,11 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  centralize:
+    build: ./
+    image: centralize
+    expose:
+      - "8000"
+    depends_on:
+      - db
