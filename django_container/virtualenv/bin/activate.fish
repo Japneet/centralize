@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/japneet/Desktop/centralize_project/virtualenv"
+set -gx VIRTUAL_ENV "/home/edd/Scrivania/centralize/centralize/backend/virtualenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

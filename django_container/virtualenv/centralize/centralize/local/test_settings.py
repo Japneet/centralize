@@ -1,0 +1,1 @@
+/home/edd/Scrivania/saleor/saleor/test_settings.py

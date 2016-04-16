@@ -1,0 +1,1 @@
+/home/edd/Scrivania/saleor/saleor/settings.py
