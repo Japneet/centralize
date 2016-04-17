@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/edd/Scrivania/centralize/centralize/backend/virtualenv"
+VIRTUAL_ENV="/home/edd/Scrivania/project/django_container/virtualenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/edd/Scrivania/centralize/centralize/backend/virtualenv"
+set -gx VIRTUAL_ENV "/home/edd/Scrivania/project/django_container/virtualenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

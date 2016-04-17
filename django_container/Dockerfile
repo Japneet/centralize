@@ -3,4 +3,6 @@ ENV PYTHONUNBUFFERED 1
 RUN mkdir /app
 COPY virtualenv/centralize /app/
 WORKDIR /app
-RUN pip install -r requirements.txt
+EXPOSE 8000
+CMD ["/bin/bash"]
+#RUN pip install -r requirements.txt
